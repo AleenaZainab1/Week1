@@ -1,0 +1,34 @@
+print("Welcome to Unit Converter!\n")  # Program ka welcome message, \n nayi line ke liye
+
+while True:  # Jab tak user exit nahi karta, loop repeat hota rahega
+    print("What would you like to convert?")  # User se poocha ja raha hai kya convert kron
+    print("1. Length (meters to kilometers)")  # 1: Lambai convert karni hai
+    print("2. Weight (kg to grams)")  #  2: Wazan convert karna hai
+    print("3. Temperature (Celsius to Fahrenheit)")  #  3: temp convert karni hai
+    print("4. Exit")  # 4: Program band karna
+
+    choice = input("Enter your choice (1-4): ")  # User se input lena  hy (1 se 4 tak)
+
+    if choice == "1":  # Agar user ne length conversion choose kiya tu
+        meters = float(input("Enter length in meters: "))  # User se meters me lambai leni
+        km = meters / 1000  # 1000 meters = 1 kilometer
+        print("Length in kilometers:", km)  # Result  
+
+    elif choice == "2":  # Agar user ne weight conversion choose kiya phir
+        kg = float(input("Enter weight in kilograms: "))  # User se kg me wazan lena
+        grams = kg * 1000  # 1 kg = 1000 grams
+        print("Weight in grams:", grams)  # Result
+
+    elif choice == "3":  # Agar user ne temperature conversion choose kiya tu
+        c = float(input("Enter temperature in Celsius: "))  # Celsius me temp lena hy
+        f = (c * 9/5) + 32  # Celsius to Fahrenheit formula
+        print("Temperature in Fahrenheit:", f)  # Result 
+
+    elif choice == "4":  # Agar user ne exit choose kiya tu phir
+        print("Thank you for using the converter. Goodbye!")  # Shukriya ka message
+        break  # Loop tor kr program end ho jy ga yahn 
+
+    else:  # Agar user ne galat option dala
+        print("Invalid choice. Please select 1 to 4 only.")  # Warning 
+
+    print("\n----------------------\n")  # Har round ke baad separator line print ho jy

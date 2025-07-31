@@ -1,0 +1,9 @@
+# User se weight aur height lo
+a = float(input("Weight (in kg): "))
+b = float(input("Height (in meter): "))
+
+# BMI ka formula
+bmi = a / (b ** 2)
+
+# Result 
+print("Your BMI is:", bmi)

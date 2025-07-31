@@ -1,0 +1,16 @@
+# Step 1: Take marks from user
+marks = int(input("Write you marks(1 to 100): "))
+
+# Step 2: Conditions check 
+if marks >= 90:
+    print("A+ Grade")
+elif marks >= 80:                    #elseif is written as elif in python
+    print("A Grade")
+elif marks >= 70:
+    print("B Grade")
+elif marks >= 60:
+    print("C Grade")
+elif marks >= 50:
+    print("D Grade")
+else:
+    print("Fail")

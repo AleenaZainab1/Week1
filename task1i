@@ -1,0 +1,36 @@
+# Take user full name
+full_name = input("Write your full namme: ")
+
+# name convert in to small letter so comparison will be easy
+full_name_lower = full_name.lower()
+
+# Name parts split with space 
+parts = full_name_lower.split()
+
+# make user name  with first and second part  + len is used due to more  number of parts
+if len(parts) >= 2:
+    username = parts[0] + "." + parts[1]
+else:
+    username = parts[0]
+
+# Username print 
+print("Username:", username)
+
+# Vowels list
+vowels = 'aeiou'
+
+# Counters start
+vowel_count = 0
+consonant_count = 0
+
+#  check every letter
+for char in full_name_lower:
+    if char.isalpha():  # if this is the letter then (space, . ignore)
+        if char in vowels:
+            vowel_count += 1  # vowel  here so increase countr
+        else:
+            consonant_count += 1  # otherwise increase consonant  count 
+
+# result print
+print("number of vowel:", vowel_count)
+print("consonent of vowel:", consonant_count)

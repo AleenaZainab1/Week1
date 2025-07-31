@@ -1,0 +1,10 @@
+# User se 3 numbers lena
+x = float(input("Enter first number: "))
+y= float(input("Enter second number: "))
+z = float(input("Enter third number: "))
+
+# Average nikalnas
+average = (x+ y + z) / 3
+
+# Results
+print("Average of three numbers is:", average)

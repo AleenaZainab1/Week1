@@ -1,0 +1,9 @@
+# Take minutes from the user 
+minutes = int(input("How many minutes? "))
+
+# Conversion logic apply krna
+hours = minutes // 60
+left_minutes = minutes % 60
+
+# Result showw
+print("Time:", hours, "hours and", left_minutes, "minute")

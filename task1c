@@ -1,0 +1,10 @@
+name = input("Enter your Name:")
+father_name = input ("Enter your Father Name")
+age = input ("Enter  your Age")
+City = input ("Enter your City")
+
+print("USER PROFILE")
+print ("Name:",name)
+print ("Father name:", father_name)
+print ("Age:", age)
+print ("City:" ,City)

@@ -1,0 +1,11 @@
+#user sy value lyn gy
+x = int(input("Enter the first number:"))
+y = int(input ("Enter the second number:"))
+#now swap withoud 3rd variable
+x = x + y
+y = x - y
+x = x - y
+#swap krny ky liyay
+print("After swap:")
+print("First number:", x)
+print("Second number:", y)

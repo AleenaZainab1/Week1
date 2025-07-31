@@ -1,0 +1,11 @@
+# Sum of numbers divisible by 3
+#end is used first taky baqi code ka pat ho loop kitni bar chalna hy
+end = int(input("From 1 to which number you want to check? "))
+
+total = 0
+
+for i in range(1, end + 1):
+    if i % 3 == 0:          # Agar number 3 se divide hota hai
+        total += i          # Total me add karo
+
+print("The sum of numbers divided by three are:", total)

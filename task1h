@@ -1,0 +1,10 @@
+# Asal amount, rate aur time user Lyna hy
+Actual_money= float(input("How much money is given: "))
+interest = float(input("interest rate "))
+time_limit = float(input("Gave for how many years/: "))
+
+# S.I ka formula 
+profit = (Actual_money * interest * time_limit) / 100
+
+# Output print 
+print("Your interest is:", profit)

@@ -1,0 +1,12 @@
+# Step 1: Take Password
+password = input("Write your password: ")
+
+# Step 2: Check strength
+if len(password) < 6:         #len is used to check the strenght of the characters
+    print("Weak Password")
+elif password.isalnum():    #.isalnum is used to check if only characters and num are used
+    print("Medium Password")  
+elif any(char in "!@#$%^&*()_+-=~" for char in password):
+    print("Strong Password")  # if symbol are used it is strong password
+else:
+    print("Can't check password strength")
