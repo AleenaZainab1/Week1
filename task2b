@@ -1,0 +1,7 @@
+#  List of 5 student names
+students = ["Ali", "Sara", "Aleena", "Zara", "Zainab"]
+
+#for printing names reverse
+    reversed_students = students[::-1]        #not using reverse fuction
+for name in reversed_students:
+    print(name)

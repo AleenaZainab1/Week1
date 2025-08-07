@@ -1,0 +1,10 @@
+# 3 coordinates ko tuple mein store krna hy
+coordinates = (56, 101, 189)
+
+#  Phir tuple ke 3 values ko alag alag variables mein unpack krna hyy
+p, q, r = coordinates
+
+#  Akhir my har coordinate ko alag alag print karna hy
+print("P coordinate:", p)
+print("Q coordinate:", q)
+print("R coordinate:", r)

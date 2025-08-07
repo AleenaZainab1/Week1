@@ -1,0 +1,23 @@
+def calc(a, b, op):  # def ka matlab hota hai define
+    if op == '+':        # agar + krna hy tu
+        return a + b
+    elif op == '-':       # agar - krna hy tu
+        return a - b
+    elif op == '*':       #agar * krna hy tu
+        return a * b
+    elif op == '/':   # agar divide krna ho tu
+        if b != 0:
+            return a / b
+        else:
+            return "Can not be divided by zero"
+    else:
+        return "Give valid operation"
+
+# user se input lena
+num1 = int(input("Give first number: "))
+num2 = int(input("Give second number: "))
+operation = input("Give operation(+, -, *, /): ")
+
+# result dikhana
+result = calc(num1, num2, operation)
+print("Result:", result)

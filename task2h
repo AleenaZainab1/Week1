@@ -1,0 +1,17 @@
+#  User se sentence lena hy
+sentence = input("Enter a sentence: ")
+
+#  Dictionary banani hy  words counts store krne k liye
+word_count = {}
+
+#  Har word ko loop se count krna hy
+for word in sentence.split():
+    if word in word_count:
+        word_count[word] += 1
+    else:
+        word_count[word] = 1
+
+#  Output show krna
+print("\nWord Frequencies:")
+for word, count in word_count.items():
+    print(word, ":", count)

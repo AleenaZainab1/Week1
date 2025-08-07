@@ -1,0 +1,10 @@
+# 2 variables banany hy phyly
+j = 7
+k = 20
+
+# Dono variables ke values ko tuple assignment se swap krna hy
+j, k = k, j
+
+# Swap hone ke baad print krna hy
+print("New value of j:", j)
+print("New value of k:", k)

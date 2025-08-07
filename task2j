@@ -1,0 +1,12 @@
+def factorial(n):  # def ka matlab hota hai define
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+# user se input lena
+num = int(input("Which number's Fictorial you want?: "))
+
+# result 
+print("Factorial:", factorial(num))
+

@@ -1,0 +1,12 @@
+# Ek list banani hy  jisme kuch value duplicate hyn
+numbers = [1, 2, 2, 3, 4, 4, 5, 5, 5]
+
+# Set ka use keyn gy taky duplicate values hata dyn
+unique_numbers = set(numbers)
+
+# Result print kiya hy ab set mein sirf unique values hongi
+print("Numbers without duplicate:", unique_numbers)
+
+# Agar wapas list chahiye to set ko list mein convert kar sakte hain
+unique_list = list(unique_numbers)
+print("List without duplicate):", unique_list)

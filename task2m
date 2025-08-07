@@ -1,0 +1,8 @@
+try:
+    file = open("data.txt", "r")
+    content = file.read()
+    print("File data:")
+    print(content)              # i don't have the file name data.txt so it will give result "file not found"
+    file.close()
+except:
+    print("File is not found . Check the name please")

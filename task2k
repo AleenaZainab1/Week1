@@ -1,0 +1,10 @@
+import random         # random and data time are buildin moudules
+import datetime
+
+# random number generate karo
+num = random.randint(1, 100)
+print("Random number:", num)
+
+# aaj ki date aur time dikhao
+now = datetime.datetime.now()
+print("Aaj ki tareekh aur waqt:", now)

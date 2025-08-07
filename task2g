@@ -1,0 +1,48 @@
+# Dictionary for students record
+students = {}
+
+while True:
+    print("\n1. Add Student")
+    print("2. View Students")
+    print("3. Update Student")
+    print("4. Delete Student")
+    print("5. Exit")
+    
+    choice = input("Enter your choice: ")
+
+    #If  Add Student than Create
+    if choice == "1":
+        roll = input("Enter Roll Number: ")
+        name = input("Enter Name: ")
+        students[roll] = name
+        print("Student added successfully.")
+
+    # If Add View Students than Read
+    elif choice == "2":
+        for roll, name in students.items():
+            print("Roll No:", roll, "| Name:", name)
+
+    #  For Update Student
+    elif choice == "3":
+        roll = input("Enter Roll Number to update: ")
+        if roll in students:
+            name = input("Enter new name: ")
+            students[roll] = name
+            print("Student updated.")
+        else:
+            print("Student not found.")
+
+    # For Delete Student
+    elif choice == "4":
+        roll = input("Enter Roll Number to delete: ")
+        if roll in students:
+            del students[roll]
+            print("Student deleted.")
+        else:
+            print("Student not found.")
+
+    #  Exit
+    elif choice == "5":
+        break
+    else:
+        print("Invalid choice.")
